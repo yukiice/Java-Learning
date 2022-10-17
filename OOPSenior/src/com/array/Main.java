@@ -10,6 +10,7 @@ public class Main {
         int[]a = {1,2,3,4,5};
         int[]b = {1,2,3,4,5};
         System.out.println(equals(a,b));
+        test("halo","什么啊");
     }
 
     private static boolean equals(int[] a,int[] b){
@@ -18,5 +19,11 @@ public class Main {
             if (a[i] != b[i]) return  false;
         }
         return  true;
+    }
+
+    private static void test(String... strings){
+        for (String name : strings){
+            System.out.println(name);
+        }
     }
 }
