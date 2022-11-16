@@ -10,10 +10,13 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) throws FileNotFoundException {
-        SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(new FileInputStream("mybatis-config.xml"));
-        try (SqlSession session = sqlSessionFactory.openSession(true)){
-           List<Student> list =  session.selectList("selectStudent");
-           list.forEach(System.out::println);
+        try (SqlSession sqlSession = MybatisUtil.getSession(true)){
+            TestMapper mapper = sqlSession.getMapper(TestMapper.class);
+            System.out.println(mapper.selectStudentById(4));
+//            System.out.println(mapper.addStudent(new Student().setName("yukiice").setAge(900)));
+
+            System.out.println(mapper.deleteStudent(4));
         }
     }
+
 }

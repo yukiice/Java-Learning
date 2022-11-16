@@ -1,9 +1,12 @@
 package com.Test;
 
 import lombok.Data;
+import lombok.experimental.Accessors;
 
 @Data
+@Accessors(chain = true)
 public class Student {
-    Integer id;
+    int id;
     String name;
+    int age;
 }
