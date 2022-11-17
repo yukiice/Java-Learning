@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.Complicated.ProductMapper">
+    <select id="selectProduct" resultMap="asProduct">
+        SELECT * FROM products pd LEFT JOIN brand b ON pd.brand_id = b.id limit 2
+    </select>
+    <resultMap id="asProduct" type="Product">
+        <id column="id" property="id"/>
+        <collection property="brandList" ofType="Brand">
+            <id property="id" column="id"/>
+            <result column="name" property="name"/>
+            <result column="website" property="website"/>
+            <result column="phoneRank" property="phoneRank"/>
+        </collection>
+    </resultMap>
+</mapper>
