@@ -4,9 +4,9 @@
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
 <!--    开启全局的二级缓存-->
-    <settings>
-        <setting name="cacheEnabled" value="false"/>
-    </settings>
+<!--    <settings>-->
+<!--        <setting name="cacheEnabled" value="false"/>-->
+<!--    </settings>-->
 <!--    <settings>-->
 <!--        <setting name="mapUnderscoreToCamelCase" value="true"/>-->
 <!--    </settings>-->
@@ -14,7 +14,8 @@
 <!--        <package  name="com.Test" />-->
 <!--        <package  name="com.Complicated" />-->
 <!--        <package name="com.Dynamic"/>-->
-        <package name="com.Caching"/>
+<!--        <package name="com.Caching"/>-->
+        <package name="com.Notes"/>
     </typeAliases>
     <environments default="development">
         <environment id="development">
@@ -31,6 +32,7 @@
 <!--        <mapper resource="com/Test/TestMapper.xml" />`-->
 <!--        <mapper resource="com/Complicated/ProductMapper.xml" />-->
 <!--        <mapper resource="com/Dynamic/ProductMapper.xml" />-->
-        <mapper resource="com/Caching/TestMapper.xml" />
+<!--        <mapper resource="com/Caching/TestMapper.xml" />-->
+        <mapper class="com.Notes.NotesMapper" />
     </mappers>
 </configuration>
