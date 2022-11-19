@@ -8,6 +8,7 @@
     </select>
     <resultMap id="asProduct" type="Product">
         <id column="id" property="id"/>
+        <id column="brand" property="brand"/>
         <collection property="brandList" ofType="Brand">
             <id property="id" column="id"/>
             <result column="name" property="name"/>

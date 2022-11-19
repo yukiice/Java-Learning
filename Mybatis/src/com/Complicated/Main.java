@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) {
         try (SqlSession sqlSession = MybatisUtil.getSession(true)) {
             ProductMapper productMapper = sqlSession.getMapper(ProductMapper.class);
-            System.out.println(productMapper.selectProduct());
+            productMapper.selectProduct().forEach(System.out::println);
         }
     }
 }
