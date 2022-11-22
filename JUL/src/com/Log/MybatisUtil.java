@@ -1,4 +1,4 @@
-package com.Dynamic;
+package com.Log;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
