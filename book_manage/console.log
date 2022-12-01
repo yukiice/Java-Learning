@@ -1,0 +1,4 @@
+十二月 02, 2022 12:35:18 上午 book.manage.Main lambda$addStudent$0
+信息: 插入成功Student(sid=0, name=jerry, sex=男, grade=1990)
+十二月 02, 2022 12:36:21 上午 book.manage.Main lambda$addStudent$0
+信息: 插入成功Student(sid=0, name=huahua, sex=女, grade=1985)
