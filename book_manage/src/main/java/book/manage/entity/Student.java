@@ -1,12 +1,21 @@
 package book.manage.entity;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.RequiredArgsConstructor;
+import lombok.NoArgsConstructor;
 
 @Data
+@NoArgsConstructor
 public class Student {
     int sid;
-    final String name;
-    final String sex;
-   final int grade;
+
+    public Student(String name, String sex, int grade) {
+        this.name = name;
+        this.sex = sex;
+        this.grade = grade;
+    }
+
+    String name;
+    String sex;
+    int grade;
 }

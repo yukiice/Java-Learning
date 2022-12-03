@@ -5,21 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="64b4a1fd-f3a4-4a5e-8657-fb65a3a4b99e" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/../book_manage/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../book_manage/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../book_manage/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../book_manage/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../book_manage/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../book_manage/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../book_manage/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../book_manage/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../book_manage/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../book_manage/src/main/java/book/manage/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../book_manage/src/main/java/book/manage/entity/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../book_manage/src/main/java/book/manage/entity/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../book_manage/src/main/java/book/manage/mapper/BookMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../book_manage/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/bee49d86-a6f8-4ca1-8203-352bc4321f16.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/bee49d86-a6f8-4ca1-8203-352bc4321f16.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../book_manage/src/main/java/book/manage/entity/Borrow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../book_manage/src/test/java/com/test/MainTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../book_manage/target/classes/book/manage/entity/Borrow.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../book_manage/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../book_manage/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../book_manage/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../book_manage/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../book_manage/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../book_manage/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../book_manage/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../book_manage/src/main/java/book/manage/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../book_manage/src/main/java/book/manage/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../book_manage/src/main/java/book/manage/entity/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/../book_manage/src/main/java/book/manage/entity/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../book_manage/src/main/java/book/manage/entity/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/../book_manage/src/main/java/book/manage/entity/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../book_manage/src/main/java/book/manage/mapper/BookMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../book_manage/src/main/java/book/manage/mapper/BookMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../book_manage/target/classes/book/manage/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../book_manage/target/classes/book/manage/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../book_manage/target/classes/book/manage/entity/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/../book_manage/target/classes/book/manage/entity/Book.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../book_manage/target/classes/book/manage/entity/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/../book_manage/target/classes/book/manage/entity/Student.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../book_manage/target/classes/book/manage/mapper/BookMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/../book_manage/target/classes/book/manage/mapper/BookMapper.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,6 +149,8 @@
       <workItem from="1669723220053" duration="7135000" />
       <workItem from="1669738086012" duration="873000" />
       <workItem from="1669906934033" duration="183000" />
+      <workItem from="1669949994541" duration="1000" />
+      <workItem from="1670055119259" duration="459000" />
     </task>
     <servers />
   </component>

@@ -39,6 +39,15 @@ public class Main {
                     case 2:
                         addBook(scanner);
                         break;
+                    case 3:
+                        selectBook(scanner);
+                        break;
+                    case 4:
+                        selectStudent(scanner);
+                        break;
+                    case 5:
+
+                        break;
                     default:
                         return;
                 }
@@ -48,6 +57,7 @@ public class Main {
 
     }
 
+//    添加学生
     private  static  void  addStudent(Scanner scanner){
         System.out.println("请输入学生名字");
         String name = scanner.nextLine();
@@ -84,4 +94,25 @@ public class Main {
             }
         });
     }
+
+//    查阅书籍
+    private static  void  selectBook(Scanner scanner){
+        System.out.println("请输入书籍名称");
+        String title = scanner.nextLine();
+        SqlUtil.doSqlWork(bookMapper ->{
+            Book book = bookMapper.selectBook(title);
+            System.out.println(book);
+        });
+    }
+//    查阅学生
+private static  void  selectStudent(Scanner scanner){
+    System.out.println("请输入学生姓名");
+    String name = scanner.nextLine();
+    SqlUtil.doSqlWork(bookMapper ->{
+        SqlUtil.doSqlWork(mapper ->{
+            Student student = mapper.selectStudent(name);
+            System.out.println(student);
+        });
+    });
+}
 }
