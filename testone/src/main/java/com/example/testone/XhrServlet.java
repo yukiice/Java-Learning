@@ -2,9 +2,7 @@ package com.example.testone;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.*;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -19,6 +17,19 @@ public class XhrServlet extends HttpServlet {
         res.setContentType("text/html;charset=UTF-8");
         res.getWriter().write(date);
         System.out.println(getServletContext().getAttribute("test"));
+        HttpSession session = req.getSession();
+        String name = (String) session.getAttribute("user");
+        System.out.println(name);
+        if (name == null){
+            res.sendRedirect("/test");
+            return;
+        }
+//        拿到cookie
+        for (Cookie cookie : req.getCookies()){
+            System.out.println(cookie.getName() + ":"+cookie.getValue());
+        }
+
+
     }
 
     @Override
