@@ -46,7 +46,9 @@ public class Main {
                         selectStudent(scanner);
                         break;
                     case 5:
-
+                        SqlUtil.doSqlWork(bookMapper -> {
+                            System.out.println(bookMapper.getStudentList());
+                        });
                         break;
                     default:
                         return;
