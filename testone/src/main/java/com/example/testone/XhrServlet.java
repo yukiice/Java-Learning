@@ -16,7 +16,7 @@ public class XhrServlet extends HttpServlet {
         String date = dateFormat.format(new Date());
         res.setContentType("text/html;charset=UTF-8");
         res.getWriter().write(date);
-        System.out.println(getServletContext().getAttribute("test"));
+//        System.out.println(getServletContext().getAttribute("test"));
         HttpSession session = req.getSession();
         String name = (String) session.getAttribute("user");
         System.out.println(name);

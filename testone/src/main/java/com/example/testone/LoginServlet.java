@@ -45,11 +45,11 @@ public class LoginServlet extends HttpServlet {
             ServletMapper mapper = sqlSession.getMapper(ServletMapper.class);
             List<Student> students = mapper.getAllStudent();
             ServletContext context = getServletContext();
-//            读取index.html
-            System.out.println(IOUtils.toString(context.getResourceAsStream("index.html"),StandardCharsets.UTF_8));
-//            读取mybatis配置文件
-            System.out.println(IOUtils.resourceToString("/mybatis-config.xml",StandardCharsets.UTF_8));
-            req.getRequestDispatcher("/time").forward(req,res);
+////            读取index.html
+//            System.out.println(IOUtils.toString(context.getResourceAsStream("index.html"),StandardCharsets.UTF_8));
+////            读取mybatis配置文件
+//            System.out.println(IOUtils.resourceToString("/mybatis-config.xml",StandardCharsets.UTF_8));
+//            req.getRequestDispatcher("/time").forward(req,res);
         }
     }
 }
